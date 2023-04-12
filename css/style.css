@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+;
+}
+.nav-bar {
+    background-color: white;
+    position: absolute;
+    z-index: 5;
+}
+.nav-bar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.4s;
+}
+
+
+.nav-bar ul {
+    display: flex;
+    float: right;
+    margin-right: 20px;
+    list-style-type: none;
+    
+}
+.nav-bar ul li {
+    display: inline-block;
+
+    margin-left: 15px;
+    color: #000;
+
+}
+.nav-bar ul :hover{
+    color: red;
+}
+.header {
+    
+    background-image: url(https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+@media(max-width:404px){
+    .header {
+        width: 100%;
+}
+    .nav-bar ul {
+        display: flex;
+        position: ;
+}
+}
+.bootme {
+    margin: 20px auto;
+    height: auto;
+    background-color: rgb(216, 212, 207);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 22px 22px ;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+}
+.boot {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(97, 90, 90);
+    
+    
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    border: 3px solid rgb(14, 13, 13);
+    border-radius: 10px;
+}
+.bootme .boot p{
+    margin: 10px;
+}
+  /* Small */
+  @media (min-width: 768px) {
+    .bootme {
+        grid-template-columns: ;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .bootme {
+        grid-template-columns: ;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .bootme {
+        position: absolute;
+        grid-template-columns: ;
+    }
+  }
